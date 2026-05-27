@@ -13,7 +13,7 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.login-container {
+.login-container, .register-container {
     width: 100%;
     max-width: 440px;
     background-color: var(--card-bg);
@@ -28,5 +28,5 @@ body {
 
 @media (max-width: 480px) {
     body { padding: 16px; }
-    .login-container { padding: 32px 24px; border: none; box-shadow: none; background: transparent; }
+    .login-container, .register-container { padding: 32px 24px; border: none; box-shadow: none; background: transparent; }
 }
