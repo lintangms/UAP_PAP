@@ -1,0 +1,18 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const navbarContainer = document.getElementById('navbar-container');
+    if (navbarContainer) {
+        navbarContainer.innerHTML = `
+        <div class="container navbar-inner">
+            <a href="beranda.html" class="brand">Rescue Guide</a>
+            <nav class="nav-menu">
+                <a href="beranda.html" class="nav-link active">Beranda</a>
+                <a href="#" class="nav-link">Chat</a>
+                <a href="#" class="nav-link">Profile</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="login.html" class="btn-text-nav">Masuk</a>
+                <a href="register.html" class="btn-primary-nav">Daftar</a>
+            </div>
+        </div>`;
+    }
+});

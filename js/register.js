@@ -65,12 +65,6 @@ form.addEventListener('submit', (e) => {
     setTimeout(() => {
         submitBtn.classList.remove('loading');
         alert(`Berhasil Mendaftar!\nSelamat bergabung, ${fullNameVal}`);
-        form.reset();
-        
-        // Reset eye icons to default (hidden text, show eye-on)
-        document.querySelectorAll('.password-toggle-btn').forEach(btn => {
-            btn.querySelector('.eye-icon-on').style.display = 'block';
-            btn.querySelector('.eye-icon-off').style.display = 'none';
-        });
+        window.location.href = 'beranda.html';
     }, 1500);
 });

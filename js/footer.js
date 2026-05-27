@@ -1,0 +1,23 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const footerContainer = document.getElementById('footer-container');
+    if (footerContainer) {
+        footerContainer.innerHTML = `
+        <div class="container footer-inner">
+            <div class="footer-brand-section">
+                <h2 class="footer-brand">Rescue Guide</h2>
+            </div>
+            <div class="footer-links-container">
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Layanan</h3>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Dukungan</h3>
+                    <a href="#" class="footer-link">Contact Support</a>
+                    <a href="#" class="footer-link">SDG 3 Impact</a>
+                </div>
+            </div>
+        </div>`;
+    }
+});

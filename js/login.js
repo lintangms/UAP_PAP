@@ -40,8 +40,6 @@ form.addEventListener('submit', (e) => {
     setTimeout(() => {
         submitBtn.classList.remove('loading');
         alert(`Berhasil Masuk!\nSelamat datang kembali, ${emailVal}`);
-        form.reset();
-        eyeOn.style.display = 'block';
-        eyeOff.style.display = 'none';
+        window.location.href = 'beranda.html';
     }, 1500);
 });
