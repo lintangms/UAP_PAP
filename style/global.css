@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #0056C6;
+    --primary-hover: #00429C;
+    --text-title: #091A30;
+    --text-body: #4E5D78;
+    --text-muted: #8A99AD;
+    --input-bg: #EFF3FA;
+    --card-bg: #FFFFFF;
+    --card-border: #E8EDF5;
+    --background: #FAFBFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
