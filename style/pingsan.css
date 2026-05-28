@@ -1,0 +1,144 @@
+/* Pingsan Page Specific Stylesheet */
+
+body.pingsan-body {
+    background-color: #FAFBFD;
+    background-image: 
+        radial-gradient(circle at 10% 90%, rgba(0, 86, 198, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 90% 10%, rgba(0, 86, 198, 0.01) 0%, transparent 35%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0;
+    position: relative;
+}
+
+/* Background blur glow effect on the bottom-left to match mockup design */
+body.pingsan-body::before {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 86, 198, 0.08) 0%, rgba(0, 86, 198, 0) 70%);
+    filter: blur(100px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.pingsan-main {
+    padding: 120px 0 140px 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.title-section {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.pingsan-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--text-title);
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.title-underline {
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    margin: 16px auto 0 auto;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.step-card:hover {
+    transform: translateY(-6px);
+}
+
+.step-badge {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0, 86, 198, 0.25);
+}
+
+.step-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-title);
+    margin-bottom: 12px;
+    letter-spacing: -0.2px;
+}
+
+.step-desc {
+    font-size: 14.5px;
+    color: var(--text-body);
+    line-height: 1.6;
+    max-width: 280px;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .steps-grid {
+        gap: 28px;
+    }
+    
+    .pingsan-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pingsan-main {
+        padding: 80px 0 100px 0;
+    }
+
+    .title-section {
+        margin-bottom: 48px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        gap: 36px;
+    }
+    
+    .step-card {
+        padding: 0;
+    }
+
+    .step-badge {
+        margin-bottom: 16px;
+    }
+}
