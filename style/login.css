@@ -5,7 +5,7 @@
 
 .brand-label {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 300;
     color: var(--primary-color);
     letter-spacing: 0.5px;
     margin-bottom: 8px;
@@ -13,7 +13,7 @@
 
 .welcome-title {
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--text-title);
     margin-bottom: 6px;
     letter-spacing: -0.5px;
@@ -22,7 +22,7 @@
 .subtitle {
     font-size: 15px;
     color: var(--text-muted);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .form-group {

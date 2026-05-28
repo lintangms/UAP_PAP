@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pengaturan Profil Rescue Guide - Kelola informasi pribadi, tanggal lahir, jenis kelamin, dan preferensi kesehatan golongan darah secara aman.">
+    <title>Pengaturan Profil - Rescue Guide</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/layout.css">
+    <link rel="stylesheet" href="../style/beranda.css">
+    <link rel="stylesheet" href="../style/profil.css">
+</head>
+<body class="beranda-body">
+    <header id="navbar-container" class="main-navbar"></header>
+
+    <main class="profil-main-content">
+        <div class="container">
+            <section class="profil-header-section">
+                <h1 class="profil-title">Pengaturan Profil</h1>
+                <p class="profil-subtitle">Kelola informasi pribadi, preferensi kesehatan, dan keamanan akun Anda.</p>
+            </section>
+
+            <div class="profil-grid-container">
+                <div class="profil-card left-panel">
+                    <div class="avatar-wrapper">
+                        <img src="../asset/alfan.png" alt="Muhammad Alfan" class="profile-avatar-large">
+                        <span class="btn-edit-avatar" aria-label="Ubah Foto Profil">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 17h.01"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <h2 class="profile-display-name">Muhammad Alfan</h2>
+                    <p class="profile-display-email">alfan@gmail.com</p>
+                    <button type="button" class="btn-edit-profile-trigger">Edit Profil</button>
+                </div>
+
+                <div class="profil-card right-panel">
+                    <div class="details-section-header">
+                        <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        <h3 class="details-title-text">Detail Pribadi</h3>
+                    </div>
+                    <div class="details-divider"></div>
+
+                    <div class="details-fields-grid">
+                        <div class="detail-field-box">
+                            <h4 class="field-label">Nama Lengkap</h4>
+                            <p class="field-value">Muhammad Alfan</p>
+                        </div>
+                        <div class="detail-field-box">
+                            <h4 class="field-label">Tanggal Lahir</h4>
+                            <p class="field-value">15 Mei 1992</p>
+                        </div>
+                        <div class="detail-field-box">
+                            <h4 class="field-label">Jenis Kelamin</h4>
+                            <p class="field-value">Laki-laki</p>
+                        </div>
+                        <div class="detail-field-box">
+                            <h4 class="field-label">Golongan Darah</h4>
+                            <div class="blood-group-badge-wrapper">
+                                <span class="blood-group-badge">O+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer-container" class="main-footer"></footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>
+
