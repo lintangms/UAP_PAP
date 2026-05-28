@@ -1,0 +1,42 @@
+/* Kategori Halaman Spesifik Stylesheet */
+
+.kategori-main-content {
+    background-color: var(--background);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    flex-grow: 1;
+}
+
+.kategori-header-section {
+    margin-bottom: 24px;
+}
+
+.kategori-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-title);
+    letter-spacing: -0.5px;
+}
+
+.kategori-subtitle {
+    font-size: 16px;
+    color: var(--text-body);
+    margin-top: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .kategori-main-content {
+        padding-top: 32px;
+    }
+    
+    .kategori-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .kategori-subtitle {
+        font-size: 14px;
+        text-align: center;
+    }
+}
